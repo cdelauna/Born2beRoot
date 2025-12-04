@@ -3,8 +3,8 @@
 script :
 
     archicteture : uname -a 
-    CPU physical :
-    vcpu :
+    CPU physical : grep "physical id" /proc/cpuinfo | wc -l
+    vcpu : grep "processor" /proc/cpuinfo | wc -l
     ram : free --meta |akw '$1 == "Mem:" .......' 
     Disk usage:
     CPU load : (vmstat 1 2 | tail -1 | awk '{printf $15}') - 100
