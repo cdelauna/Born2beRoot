@@ -20,13 +20,8 @@
 creer un user : 
 
     useradd <name>
-pour creer un group:
-
-    addgroup <group>
-    
-pour mettre le user dans un group:
-
-    adduser <name> <group>
+    addgroup <group> #creer un group
+    adduser <name> <group> #met user dans un group:
 
 changer de hostname :
 
