@@ -17,6 +17,17 @@
 
 ## commande eval utile :
 
+creer un user : 
+
+    useradd <name>
+pour creer un group:
+
+    addgroup <group>
+    
+pour mettre le user dans un group:
+
+    adduser <name> <group>
+
 changer de hostname :
 
     sudo nano /etc/hostname 
