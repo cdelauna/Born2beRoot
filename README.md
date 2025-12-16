@@ -1,6 +1,6 @@
 # Born2beRoot
 
-script :
+## script :
 
     archicteture : uname -a 
     CPU physical : grep "physical id" /proc/cpuinfo | wc -l
@@ -14,3 +14,9 @@ script :
     user log: user | wc -w
     network: hostname -I (ip link | grep "link/ether" | awk '{print $2}')
     sudo command : journalctl _COMM=sudo | grep COMMAND | wc -l
+
+## commande eval utile :
+
+changer de hostname :
+
+    sudo nano /etc/hostname 
